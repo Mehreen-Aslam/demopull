@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyFinances</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>MyFinances</h1>
+
+    <form id="financeForm">
+        <label>
+            <input type="radio" name="accountType" value="CD" onclick="enableFields()"> CD
+        </label>
+        <label>
+            <input type="radio" name="accountType" value="Loan" onclick="enableFields()"> Loan
+        </label>
+        <label>
+            <input type="radio" name="accountType" value="Checking" onclick="enableFields()"> Checking
+        </label>
+
+        <label>
+            Account Number:
+            <input type="text" id="accountNumber" name="accountNumber">
+        </label>
+
+        <label>
+            Initial Balance:
+            <input type="text" id="initialBalance" name="initialBalance">
+        </label>
+
+        <label>
+            Current Balance:
+            <input type="text" id="currentBalance" name="currentBalance">
+        </label>
+
+        <label>
+            Payment Amount:
+            <input type="text" id="paymentAmount" name="paymentAmount">
+        </label>
+
+        <label>
+            Interest Rate:
+            <input type="text" id="interestRate" name="interestRate">
+        </label>
+
+        <button type="button" onclick="saveData()">Save</button>
+        <button type="button" onclick="clearFields()">Cancel</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
